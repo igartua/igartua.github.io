@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tukanon</title>
+
+    <meta name="description" content="Tukanon - Pop Rock">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+
+            background-image: url("tukanon.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            position: relative;
+        }
+
+        /* Capa oscura sobre la fotografía */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 0;
+        }
+
+        .contenido {
+            position: relative;
+            z-index: 1;
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            letter-spacing: 6px;
+            margin: 0 0 10px;
+        }
+
+        .descripcion {
+            font-size: 1.3rem;
+            margin: 0 0 35px;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .redes a {
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+
+            width: 55px;
+            height: 55px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+
+            transition:
+                background-color 0.25s ease,
+                color 0.25s ease,
+                transform 0.25s ease;
+        }
+
+        .redes a:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        .email {
+            margin-top: 30px;
+        }
+
+        .email a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .email a:hover {
+            text-decoration: underline;
+        }
+
+        .email i {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 3.5rem;
+                letter-spacing: 4px;
+            }
+
+            .descripcion {
+                font-size: 1.1rem;
+            }
+
+            .redes {
+                gap: 18px;
+            }
+
+            .redes a {
+                width: 50px;
+                height: 50px;
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="contenido">
+
+        <h1>TUKANON</h1>
+
+        <p class="descripcion">
+            Zeberion eta Artean sortutako musika taldea gara. Arratia Sound estiloa defendatzen dugu oholtza gainean. 2026ko udaberrian Ezin GeldiTour bira hasi berri dugu.
+        </p>
+
+        <div class="redes">
+
+            <a href="https://www.instagram.com/tukanon.taldea/"
+               target="_blank"
+               rel="noopener noreferrer" 
+               aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/tukanon.taldea"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@Tukanontaldea"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+        <div class="email">
+            <a href="mailto:info@tukanon.eus">
+                <i class="fa-solid fa-envelope"></i>
+                info@tukanon.eus
+            </a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
